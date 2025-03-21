@@ -8,35 +8,48 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @State var email = ""
+    @State var password = ""
+    
     var body: some View {
-        // A vertical stack
-        VStack {
-            // Header
-            ZStack {
-                RoundedRectangle(cornerRadius: 0)
-                    .foregroundColor(Color.pink)
-                    .rotationEffect(Angle(degrees: 15))
-                VStack {
-                    Text("To Do List")
-                        .font(.system(size: 50))
-                        .foregroundColor(Color.white)
-                        .bold()
-                    Text("Get things done")
-                        .font(.system(size: 30))
-                        .foregroundColor(Color.white)
+        // Allows us to do page navigation
+        NavigationView {
+            // A vertical stack
+            VStack {
+                // Header
+                HeaderView()
+                
+                // Login Form
+                Form {
+                    TextField("Email Adress", text: $email)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                    SecureField("Password", text: $password)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                    Button {
+                        
+                    } label: {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .foregroundColor(Color.blue)
+                            
+                            Text("Log in")
+                                .foregroundColor(Color.white)
+                                .bold()
+                        }
+                    }
                 }
-                .padding(.top, 30)
+                
+                // Create Account
+                VStack {
+                    Text("New around here?")
+                    NavigationLink("Create An Account",
+                                   destination: RegisterView())
+                }
+                .padding(.bottom, 50)
+                
+                Spacer()
             }
-            .frame(width: UIScreen.main.bounds.width * 3,
-                   height: 300)
-            // offset for negative y pushes the rectangle up
-            .offset(y: -100)
-            
-            // Login Form
-            
-            // Create Account
-            
-            Spacer()
         }
     }
 }

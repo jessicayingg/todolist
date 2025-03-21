@@ -30,6 +30,7 @@
 		3D9D26692D8CC04500DC100D /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D26682D8CC04500DC100D /* LoginViewViewModel.swift */; };
 		3D9D266B2D8CC04E00DC100D /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D266A2D8CC04E00DC100D /* RegisterViewViewModel.swift */; };
 		3D9D266D2D8CC05900DC100D /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D266C2D8CC05900DC100D /* ToDoListItemViewViewModel.swift */; };
+		3D9D266F2D8D0C0400DC100D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D266E2D8D0C0400DC100D /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		3D9D26682D8CC04500DC100D /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewViewModel.swift; path = ToDoList/LoginViewViewModel.swift; sourceTree = SOURCE_ROOT; };
 		3D9D266A2D8CC04E00DC100D /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewViewModel.swift; path = ToDoList/RegisterViewViewModel.swift; sourceTree = SOURCE_ROOT; };
 		3D9D266C2D8CC05900DC100D /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToDoListItemViewViewModel.swift; path = ToDoList/ToDoListItemViewViewModel.swift; sourceTree = SOURCE_ROOT; };
+		3D9D266E2D8D0C0400DC100D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = ToDoList/HeaderView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3D9D26562D8CBF3100DC100D /* LoginView.swift */,
 				3D9D26582D8CBF3900DC100D /* RegisterView.swift */,
 				3D9D265A2D8CBFC900DC100D /* ToDoListItemView.swift */,
+				3D9D266E2D8D0C0400DC100D /* HeaderView.swift */,
 				3D8C8D232D84EFD9007E7FEC /* Preview Content */,
 			);
 			path = ToDoList;
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9D26572D8CBF3100DC100D /* LoginView.swift in Sources */,
+				3D9D266F2D8D0C0400DC100D /* HeaderView.swift in Sources */,
 				3D8C8D202D84EFD9007E7FEC /* MainView.swift in Sources */,
 				3D9D266B2D8CC04E00DC100D /* RegisterViewViewModel.swift in Sources */,
 				3D9D26612D8CC02100DC100D /* MainViewViewModel.swift in Sources */,
