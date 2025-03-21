@@ -6,21 +6,27 @@
 //
 
 import SwiftUI
+import FirebaseFirestoreSwift
 
 struct ToDoListView: View {
     @StateObject var viewModel = ToDoListViewViewModel()
-    
-    private let userId: String
+    @FirestoreQuery var items: [ToDoListItem]
     
     // We want to be able to pass something into this ToDoListView
     init(userId: String) {
-        self.userId = userId
+        // Our data lives at users/<id>/todos/<entries?
+        self._items = FirestoreQuery(
+            collectionPath: "users/\(userId)\todos"
+        )
     }
     
     var body: some View {
         NavigationView {
             VStack {
-                
+                List(items) {item in
+                    Text(item.title)
+                }
+                .listStyle(PlainListStyle())
             }
             .navigationTitle("To Do List")
             .toolbar {
@@ -41,6 +47,6 @@ struct ToDoListView: View {
 
 struct ToDoListItemsView_Previews: PreviewProvider {
     static var previews: some View {
-        ToDoListView(userId: "")
+        ToDoListView(userId: "HPWIfZvDomUgOGwCQksO2OttSwf1")
     }
 }
