@@ -8,6 +8,15 @@
 import SwiftUI
 
 struct ToDoListView: View {
+    @StateObject var viewModel = ToDoListViewViewModel()
+    
+    private let userId: String
+    
+    // We want to be able to pass something into this ToDoListView
+    init(userId: String) {
+        self.userId = userId
+    }
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -27,6 +36,6 @@ struct ToDoListView: View {
 
 struct ToDoListItemsView_Previews: PreviewProvider {
     static var previews: some View {
-        ToDoListView()
+        ToDoListView(userId: "")
     }
 }
