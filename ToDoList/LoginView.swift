@@ -18,7 +18,10 @@ struct LoginView: View {
             // A vertical stack
             VStack {
                 // Header
-                HeaderView()
+                HeaderView(title: "To Do List",
+                           subtitle: "Get things done",
+                           angle: 15,
+                           background: .pink)
                 
                 // Login Form
                 Form {
@@ -27,7 +30,7 @@ struct LoginView: View {
                     SecureField("Password", text: $password)
                         .textFieldStyle(DefaultTextFieldStyle())
                     Button {
-                        
+                        // Attempt log in
                     } label: {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
@@ -38,7 +41,9 @@ struct LoginView: View {
                                 .bold()
                         }
                     }
+                    .padding()
                 }
+                .offset(y: -50)
                 
                 // Create Account
                 VStack {
