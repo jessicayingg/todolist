@@ -3,24 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D408E902D8F5CD6003299D3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D408E8F2D8F5CD6003299D3 /* Launch Screen.storyboard */; };
 		3D8C8D1E2D84EFD9007E7FEC /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C8D1D2D84EFD9007E7FEC /* ToDoListApp.swift */; };
-		3D8C8D202D84EFD9007E7FEC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C8D1F2D84EFD9007E7FEC /* MainView.swift */; };
 		3D8C8D222D84EFD9007E7FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8C8D212D84EFD9007E7FEC /* Assets.xcassets */; };
 		3D8C8D252D84EFD9007E7FEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8C8D242D84EFD9007E7FEC /* Preview Assets.xcassets */; };
 		3D8C8D3E2D84F3B5007E7FEC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3D8C8D3D2D84F3B5007E7FEC /* FirebaseAuth */; };
 		3D8C8D402D84F3B5007E7FEC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3D8C8D3F2D84F3B5007E7FEC /* FirebaseFirestore */; };
 		3D8C8D422D84F3B5007E7FEC /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3D8C8D412D84F3B5007E7FEC /* FirebaseFirestoreSwift */; };
 		3D8C8D442D84F4AB007E7FEC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D8C8D432D84F4AA007E7FEC /* GoogleService-Info.plist */; };
-		3D8C8D4A2D84F901007E7FEC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C8D492D84F901007E7FEC /* ProfileView.swift */; };
-		3D9D26532D8CBF0E00DC100D /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D26522D8CBF0E00DC100D /* ToDoListView.swift */; };
-		3D9D26552D8CBF2600DC100D /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D26542D8CBF2600DC100D /* NewItemView.swift */; };
-		3D9D26572D8CBF3100DC100D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D26562D8CBF3100DC100D /* LoginView.swift */; };
-		3D9D26592D8CBF3900DC100D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D26582D8CBF3900DC100D /* RegisterView.swift */; };
-		3D9D265B2D8CBFC900DC100D /* ToDoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D265A2D8CBFC900DC100D /* ToDoListItemView.swift */; };
 		3D9D265D2D8CBFED00DC100D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D265C2D8CBFED00DC100D /* User.swift */; };
 		3D9D265F2D8CBFF300DC100D /* ToDoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D265E2D8CBFF300DC100D /* ToDoListItem.swift */; };
 		3D9D26612D8CC02100DC100D /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D26602D8CC02100DC100D /* MainViewViewModel.swift */; };
@@ -30,24 +24,16 @@
 		3D9D26692D8CC04500DC100D /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D26682D8CC04500DC100D /* LoginViewViewModel.swift */; };
 		3D9D266B2D8CC04E00DC100D /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D266A2D8CC04E00DC100D /* RegisterViewViewModel.swift */; };
 		3D9D266D2D8CC05900DC100D /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D266C2D8CC05900DC100D /* ToDoListItemViewViewModel.swift */; };
-		3D9D266F2D8D0C0400DC100D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D266E2D8D0C0400DC100D /* HeaderView.swift */; };
-		3D9D26712D8D23DE00DC100D /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D26702D8D23DE00DC100D /* TLButton.swift */; };
 		3D9D26732D8D2E7300DC100D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D26722D8D2E7300DC100D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D408E8F2D8F5CD6003299D3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		3D8C8D1A2D84EFD9007E7FEC /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8C8D1D2D84EFD9007E7FEC /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
-		3D8C8D1F2D84EFD9007E7FEC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3D8C8D212D84EFD9007E7FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D8C8D242D84EFD9007E7FEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D8C8D432D84F4AA007E7FEC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		3D8C8D492D84F901007E7FEC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		3D9D26522D8CBF0E00DC100D /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
-		3D9D26542D8CBF2600DC100D /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
-		3D9D26562D8CBF3100DC100D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		3D9D26582D8CBF3900DC100D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		3D9D265A2D8CBFC900DC100D /* ToDoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemView.swift; sourceTree = "<group>"; };
 		3D9D265C2D8CBFED00DC100D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = ToDoList/User.swift; sourceTree = SOURCE_ROOT; };
 		3D9D265E2D8CBFF300DC100D /* ToDoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToDoListItem.swift; path = ToDoList/ToDoListItem.swift; sourceTree = SOURCE_ROOT; };
 		3D9D26602D8CC02100DC100D /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewViewModel.swift; path = ToDoList/MainViewViewModel.swift; sourceTree = SOURCE_ROOT; };
@@ -57,10 +43,12 @@
 		3D9D26682D8CC04500DC100D /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewViewModel.swift; path = ToDoList/LoginViewViewModel.swift; sourceTree = SOURCE_ROOT; };
 		3D9D266A2D8CC04E00DC100D /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewViewModel.swift; path = ToDoList/RegisterViewViewModel.swift; sourceTree = SOURCE_ROOT; };
 		3D9D266C2D8CC05900DC100D /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToDoListItemViewViewModel.swift; path = ToDoList/ToDoListItemViewViewModel.swift; sourceTree = SOURCE_ROOT; };
-		3D9D266E2D8D0C0400DC100D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = ToDoList/HeaderView.swift; sourceTree = SOURCE_ROOT; };
-		3D9D26702D8D23DE00DC100D /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TLButton.swift; path = ToDoList/TLButton.swift; sourceTree = SOURCE_ROOT; };
 		3D9D26722D8D2E7300DC100D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3D408E8A2D8F5BB6003299D3 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3D8C8D172D84EFD9007E7FEC /* Frameworks */ = {
@@ -98,16 +86,7 @@
 				3D8C8D482D84F7D4007E7FEC /* Other */,
 				3D8C8D472D84F7C1007E7FEC /* Models */,
 				3D8C8D462D84F7B8007E7FEC /* ViewModels */,
-				3D8C8D452D84F7AD007E7FEC /* Views */,
-				3D8C8D1F2D84EFD9007E7FEC /* MainView.swift */,
-				3D8C8D492D84F901007E7FEC /* ProfileView.swift */,
-				3D9D26522D8CBF0E00DC100D /* ToDoListView.swift */,
-				3D9D26542D8CBF2600DC100D /* NewItemView.swift */,
-				3D9D26562D8CBF3100DC100D /* LoginView.swift */,
-				3D9D26582D8CBF3900DC100D /* RegisterView.swift */,
-				3D9D265A2D8CBFC900DC100D /* ToDoListItemView.swift */,
-				3D9D266E2D8D0C0400DC100D /* HeaderView.swift */,
-				3D9D26702D8D23DE00DC100D /* TLButton.swift */,
+				3D408E8A2D8F5BB6003299D3 /* Views */,
 				3D8C8D232D84EFD9007E7FEC /* Preview Content */,
 			);
 			path = ToDoList;
@@ -119,13 +98,6 @@
 				3D8C8D242D84EFD9007E7FEC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		3D8C8D452D84F7AD007E7FEC /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		3D8C8D462D84F7B8007E7FEC /* ViewModels */ = {
@@ -158,6 +130,7 @@
 				3D8C8D432D84F4AA007E7FEC /* GoogleService-Info.plist */,
 				3D8C8D1D2D84EFD9007E7FEC /* ToDoListApp.swift */,
 				3D9D26722D8D2E7300DC100D /* Extensions.swift */,
+				3D408E8F2D8F5CD6003299D3 /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -176,6 +149,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3D408E8A2D8F5BB6003299D3 /* Views */,
 			);
 			name = ToDoList;
 			packageProductDependencies = (
@@ -230,6 +206,7 @@
 			files = (
 				3D8C8D252D84EFD9007E7FEC /* Preview Assets.xcassets in Resources */,
 				3D8C8D222D84EFD9007E7FEC /* Assets.xcassets in Resources */,
+				3D408E902D8F5CD6003299D3 /* Launch Screen.storyboard in Resources */,
 				3D8C8D442D84F4AB007E7FEC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,24 +218,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9D26572D8CBF3100DC100D /* LoginView.swift in Sources */,
-				3D9D266F2D8D0C0400DC100D /* HeaderView.swift in Sources */,
-				3D8C8D202D84EFD9007E7FEC /* MainView.swift in Sources */,
 				3D9D266B2D8CC04E00DC100D /* RegisterViewViewModel.swift in Sources */,
 				3D9D26612D8CC02100DC100D /* MainViewViewModel.swift in Sources */,
-				3D9D26532D8CBF0E00DC100D /* ToDoListView.swift in Sources */,
-				3D9D26592D8CBF3900DC100D /* RegisterView.swift in Sources */,
-				3D9D26712D8D23DE00DC100D /* TLButton.swift in Sources */,
 				3D9D26632D8CC02800DC100D /* ProfileViewViewModel.swift in Sources */,
-				3D8C8D4A2D84F901007E7FEC /* ProfileView.swift in Sources */,
 				3D9D265D2D8CBFED00DC100D /* User.swift in Sources */,
-				3D9D265B2D8CBFC900DC100D /* ToDoListItemView.swift in Sources */,
 				3D9D26652D8CC03200DC100D /* ToDoListViewViewModel.swift in Sources */,
 				3D9D26692D8CC04500DC100D /* LoginViewViewModel.swift in Sources */,
 				3D8C8D1E2D84EFD9007E7FEC /* ToDoListApp.swift in Sources */,
 				3D9D26732D8D2E7300DC100D /* Extensions.swift in Sources */,
 				3D9D265F2D8CBFF300DC100D /* ToDoListItem.swift in Sources */,
-				3D9D26552D8CBF2600DC100D /* NewItemView.swift in Sources */,
 				3D9D26672D8CC03900DC100D /* NewItemViewViewModel.swift in Sources */,
 				3D9D266D2D8CC05900DC100D /* ToDoListItemViewViewModel.swift in Sources */,
 			);
