@@ -27,8 +27,11 @@ struct ToDoListItemView: View {
             Button {
                 viewModel.setIsDone(item: item)
             } label: {
-                Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")
+                Image(systemName: item.isDone ?
+                      "checkmark.circle.fill" : "circle")
+                .foregroundColor(Color.blue)
             }
+            .buttonStyle(PlainButtonStyle()) // So that only the button is clickable, not all HStack
         }
     }
 }
