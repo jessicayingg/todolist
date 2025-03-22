@@ -9,7 +9,7 @@ import SwiftUI
 import FirebaseFirestoreSwift
 
 struct ToDoListView: View {
-    @StateObject var viewModel = ToDoListViewViewModel()
+    @StateObject var viewModel: ToDoListViewViewModel
     @FirestoreQuery var items: [ToDoListItem]
     
     // We want to be able to pass something into this ToDoListView
@@ -18,6 +18,9 @@ struct ToDoListView: View {
         self._items = FirestoreQuery(
             collectionPath: "users/\(userId)/todos"
         )
+        self._viewModel = StateObject(
+            // Pass in the view model w/ its associated userId
+            wrappedValue: ToDoListViewViewModel(userId: userId))
     }
     
     var body: some View {
@@ -31,8 +34,8 @@ struct ToDoListView: View {
                                 viewModel.delete(id: item.id)
                             } label: {
                                 Text("Delete")
-                                    .foregroundColor(Color.red)
                             }
+                            .tint(.red)
                         }
                 }
                 .listStyle(PlainListStyle())
