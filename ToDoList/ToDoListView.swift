@@ -16,7 +16,7 @@ struct ToDoListView: View {
     init(userId: String) {
         // Our data lives at users/<id>/todos/<entries?
         self._items = FirestoreQuery(
-            collectionPath: "users/\(userId)\todos"
+            collectionPath: "users/\(userId)/todos"
         )
     }
     
@@ -24,14 +24,23 @@ struct ToDoListView: View {
         NavigationView {
             VStack {
                 List(items) {item in
-                    Text(item.title)
+                    ToDoListItemView(item: item)
+                        .swipeActions {
+                            Button {
+                                // Delete
+                                viewModel.delete(id: item.id)
+                            } label: {
+                                Text("Delete")
+                                    .foregroundColor(Color.red)
+                            }
+                        }
                 }
                 .listStyle(PlainListStyle())
             }
             .navigationTitle("To Do List")
             .toolbar {
                 Button {
-                    // Action
+                    // Action
                     viewModel.showingNewItemView = true
                 } label: {
                     Image(systemName: "plus")
