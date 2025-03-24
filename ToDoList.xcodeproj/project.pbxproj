@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D408E902D8F5CD6003299D3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D408E8F2D8F5CD6003299D3 /* Launch Screen.storyboard */; };
-		3D408E922D911056003299D3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3D408E912D911056003299D3 /* .gitignore */; };
-		3D408E942D911192003299D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D408E932D911192003299D3 /* GoogleService-Info.plist */; };
+		3D408EA82D9112FD003299D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D408EA72D9112FD003299D3 /* GoogleService-Info.plist */; };
 		3D8C8D1E2D84EFD9007E7FEC /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C8D1D2D84EFD9007E7FEC /* ToDoListApp.swift */; };
 		3D8C8D222D84EFD9007E7FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8C8D212D84EFD9007E7FEC /* Assets.xcassets */; };
 		3D8C8D252D84EFD9007E7FEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8C8D242D84EFD9007E7FEC /* Preview Assets.xcassets */; };
@@ -30,8 +29,7 @@
 
 /* Begin PBXFileReference section */
 		3D408E8F2D8F5CD6003299D3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		3D408E912D911056003299D3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		3D408E932D911192003299D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D408EA72D9112FD003299D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3D8C8D1A2D84EFD9007E7FEC /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8C8D1D2D84EFD9007E7FEC /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		3D8C8D212D84EFD9007E7FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,11 +127,10 @@
 			isa = PBXGroup;
 			children = (
 				3D8C8D212D84EFD9007E7FEC /* Assets.xcassets */,
-				3D408E932D911192003299D3 /* GoogleService-Info.plist */,
+				3D408EA72D9112FD003299D3 /* GoogleService-Info.plist */,
 				3D8C8D1D2D84EFD9007E7FEC /* ToDoListApp.swift */,
 				3D9D26722D8D2E7300DC100D /* Extensions.swift */,
 				3D408E8F2D8F5CD6003299D3 /* Launch Screen.storyboard */,
-				3D408E912D911056003299D3 /* .gitignore */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -207,11 +204,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D408E922D911056003299D3 /* .gitignore in Resources */,
 				3D8C8D252D84EFD9007E7FEC /* Preview Assets.xcassets in Resources */,
 				3D8C8D222D84EFD9007E7FEC /* Assets.xcassets in Resources */,
+				3D408EA82D9112FD003299D3 /* GoogleService-Info.plist in Resources */,
 				3D408E902D8F5CD6003299D3 /* Launch Screen.storyboard in Resources */,
-				3D408E942D911192003299D3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
